@@ -20,8 +20,8 @@ function greyhawk_handle_subscription() {
     if ( isset($_POST['subscriber_email']) ) {
         $email = sanitize_email($_POST['subscriber_email']);
         // Add logic to connect to Mailchimp API and subscribe user
-        $api_key = 'YOUR_MAILCHIMP_API_KEY';
-        $list_id = 'YOUR_MAILCHIMP_LIST_ID';
+        $api_key = '4bf5615965fd3d15ee2f0a303c8c67ac-us22';
+        $list_id = '158af4ffb4';
         $data_center = substr($api_key,strpos($api_key,'-')+1);
         $url = 'https://' . $data_center . '.api.mailchimp.com/3.0/lists/' . $list_id . '/members/';
 
